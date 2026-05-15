@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; background: #050714; }
+body { background: #050714; color: #fff; }
+::selection { background: rgba(99,102,241,0.3); }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #050714; }
+::-webkit-scrollbar-thumb { background: rgba(99,102,241,0.4); border-radius: 99px; }
+
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+@keyframes float1 { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-16px)} }
+@keyframes float2 { 0%,100%{transform:translateY(0)} 50%{transform:translateY(12px)} }
+@keyframes load { from{width:0} to{width:100%} }
